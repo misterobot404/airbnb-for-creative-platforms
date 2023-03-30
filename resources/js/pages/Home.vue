@@ -1,5 +1,6 @@
 <template>
     Это мой дом!
+    <q-btn label="Hello"/>
     <YandexMap
         :coordinates="[55.75, 37.57]"
         :zoom="11"
@@ -12,7 +13,7 @@
 </template>
 
 <script>
-import {YandexMap, YandexMarker, loadYmap} from 'vue-yandex-maps'
+import {YandexMap, YandexMarker} from 'vue-yandex-maps'
 
 export default {
     name: "Home",
