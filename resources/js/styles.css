@@ -1,0 +1,361 @@
+/*Переменная выделения элементов*/
+:root{
+    --selection: rgba(112, 182, 246, 0.12);
+}
+
+/*Глобальное подключение шрифта в проект*/
+@font-face {
+    font-family: 'Inter';
+    src: url("/public/assets/font/Inter-VariableFont_slnt,wght.ttf");
+}
+
+/*Цвета*/
+
+/*Текстовые*/
+
+/*Основной цвет и заголовки*/
+.text-01 {
+    color: #1B1F3B;
+}
+
+/*Вторичный текст и описание*/
+.text-02 {
+    color: rgba(27, 31, 59, 0.65);
+}
+
+/*Неактивные и дополнительные пункты, второстепенная информация*/
+.text-03{
+    color: rgba(27, 31, 59, 0.4);
+}
+
+/*Ссылки и текст дополнительных кнопок*/
+.link{
+    color: #2878CB;
+}
+
+/*Состояние наведения у ссылок и текста дополнительных кнопок*/
+.link-hover{
+    color: #5AAAFD;
+}
+
+/*Позитивные значения*/
+.positive{
+    color: #3aa981;
+}
+
+/*Состояние наведения у Позитивных значений*/
+.positive-hover{
+    color: #7ac5aa;
+}
+
+/*Отрицательные значения*/
+.negative{
+    color: #DD4C1E;
+}
+
+/*Состояние наведения у отрицательных значений*/
+.negative-hover{
+    color: #E38163;
+}
+
+
+
+/*Статусы*/
+/*Иконки или другие элементы ошибки*/
+.error-fill{
+    background: #f45725;
+}
+
+/*Фон для элементов ошибки*/
+.error-bg{
+    background: rgba(244, 87, 37, 0.12);
+}
+
+/*Наведённое состояние фона для элементов ошибки*/
+.error-bg-hover{
+    background: rgba(244, 87, 37, 0.24);
+}
+
+/*Иконки или другие элементы успешного действия*/
+.success-fill{
+    background:#4ac99b;
+}
+
+/*Фон для элементов успешного действия*/
+.success-bg{
+    background:rgba(74, 201, 155, 0.12);
+}
+
+/*Наведённое состояние фона для элементов успешного действия*/
+.success-bg-hover{
+    background:rgba(74, 201, 155, 0.24);
+}
+
+/*Иконки или другие элементы предупреждения*/
+.warning-fill{
+    background:#ffc700;
+}
+
+/*Фон для элементов предупреждения*/
+.warning-bg{
+    background:rgba(255, 199, 0, 0.12);
+}
+
+/*Наведённое состояние фона для предупреждающих элементов*/
+.warning-bg-hover{
+    background: rgba(255, 199, 0, 0.24);
+}
+
+/*Иконки или другие элементы с информацией*/
+.info-fill{
+    background: #6EB7F7;
+}
+
+/*Фон для элементов с информацией*/
+.info-bg{
+    background:rgba(112, 182, 246, 0.12);
+}
+
+/*Наведённое состояние фона для информационных элементов*/
+.info-bg-hover{
+    background:rgba(112, 182, 246, 0.24);
+}
+
+/*Иконки или другие элементы с нейтральным значением*/
+.neutral-fill{
+    background:#79818C;
+}
+
+/*Фон для нейтральных элементов*/
+.neutral-bg{
+    background:rgba(121, 129, 140, 0.12);
+}
+
+/*Наведённое состояние фона для нейтральных элементов*/
+.neutral-bg-hover{
+    background:rgba(121, 129, 140, 0.24);
+}
+
+
+
+
+/*Базовые цвета*/
+/*Базовый белый*/
+.base-00{
+    background: #FFFFFF;
+}
+
+/*Фон страниц*/
+.base-01{
+    background: #F7F9FB;
+}
+
+/*Дополнительный фон страницы, плитка на основном фоне и фон статических маркеров*/
+.base-02{
+    background: #f6f6f6;
+}
+
+/*Границы*/
+.base-03{
+    background: #EDEDED;
+}
+
+/*Подчеркивание и разделители*/
+base-04{
+    background: #D7D7D7;
+}
+
+/*Фон кнопок*/
+.btn-primary{
+    background: #0B6CC1;
+}
+
+/*Наведённое состояние кнопок*/
+.btn-primary-hover{
+    background: #3394E9;
+}
+
+/*Активное состояние кнопок*/
+.btn-primary-active{
+    background: #0B6CC1;
+}
+
+/*Дополнительные кнопки*/
+.secondary{
+    background: #EBEFFF;
+}
+
+/*Наведённое состояние дополнительных кнопок*/
+.secondary-hover{
+    background: #DFE3F3;
+}
+
+/*Активное состояние дополнительных кнопок*/
+.secondary-active{
+    background: #D8DDF2;
+}
+
+/*Фон акцентных значков или кнопок*/
+.accent{
+    background: #E74362;
+}
+
+/*Наведённое состояние акцентных значков или кнопок*/
+.accent-hover{
+    background:#FF6B8A;
+}
+
+/*Активное состояние  акцентных значков или кнопок*/
+.accent-active{
+    background:#D32F4E;
+}
+
+
+
+/*Типографика*/
+h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 56px;
+}
+
+h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 48px;
+}
+
+h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h6{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.text-xl-b{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.text-xl{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.text-l-b{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.text-l{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.text-m-b{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.text-m{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.text-s-b{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.text-s{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.text-xs-b{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.text-xs{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+
+span::selection,div::selection,h1::selection,h2::selection,h3::selection,h4::selection,h5::selection, a::selection,
+p::selection{
+    background: var(--selection);
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+    max-width: 336px;
+    background: #fff;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+

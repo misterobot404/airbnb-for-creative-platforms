@@ -4,6 +4,7 @@ import 'quasar/dist/quasar.prod.css';
 import langRu from 'quasar/lang/ru';
 import router from "./router";
 import App from "./App.vue";
+import './styles.css'
 
 createApp(App)
     .use(router)
