@@ -15,7 +15,7 @@
             </div>
             <div class="row q-mt-md">
                 <div class="col-3 col-6-md col-12-sm flex column items-center">
-                        <img src="/assets/image/LeshaSVO.png" alt="Аватарка" style="width: fit-content">
+                        <img src="../assets/images/LeshaSVO.png" alt="Аватарка" style="width: fit-content">
                         <q-btn
                             class="self-center secondary link"
                             label="Загрузить фото"
@@ -95,13 +95,13 @@
                 </div>
                 <div class="col-4 col-12-md col-12-sm flex column items-center flex-start">
                     <div class="info-card">
-                        <object data="/assets/image/site-amico-1.svg"></object>
+                        <img src="../assets/images/site-amico-1.svg"/>
                         <span class="text-m-b text-01">Зачем вносить ваши данные?</span>
                         <span class="text-s text-01">Для заключения договоров на площадке CreativeHub необходимо подтвердить вашу личность.
                             Мы храним все персональные данные в соответствии с ФЗ-152 “О персональных данных”.</span>
                     </div>
                     <div class="info-card q-mt-lg">
-                        <object data="/assets/image/analysis-amico-1.svg"></object>
+                        <img src="../assets/images/analysis-amico-1.svg">
                         <span class="text-m-b text-01">Зачем вносить ваши данные?</span>
                         <span class="text-s text-01">Для заключения договоров на площадке CreativeHub необходимо подтвердить вашу личность.
                             Мы храним все персональные данные в соответствии с ФЗ-152 “О персональных данных”.</span>

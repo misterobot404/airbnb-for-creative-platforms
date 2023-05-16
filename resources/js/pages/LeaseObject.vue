@@ -1,12 +1,12 @@
 <template>
     <div>
-        Страница не найдена
+        Сдать объект в аренду
     </div>
 </template>
 
 <script>
 export default {
-    name: "PageNotFound"
+    name: "LeaseObject"
 }
 </script>
 

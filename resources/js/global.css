@@ -1,17 +1,31 @@
-/*Переменная выделения элементов*/
-:root{
-    --selection: rgba(112, 182, 246, 0.12);
-}
+/*
+** ШРИФТЫ
+*/
 
-/*Глобальное подключение шрифта в проект*/
 @font-face {
     font-family: 'Inter';
-    src: url("/public/assets/font/Inter-VariableFont_slnt,wght.ttf");
+    src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
-/*Цвета*/
 
-/*Текстовые*/
+/*
+** КАСТОМНЫЕ КЛАССЫ
+*/
+.border-radius-lg {
+    border-radius: 8px;
+}
+
+.btn-p-sm {
+    padding: 0 12px;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.page-padding {
+    padding: 0 80px;
+}
 
 /*Основной цвет и заголовки*/
 .text-01 {
@@ -24,244 +38,189 @@
 }
 
 /*Неактивные и дополнительные пункты, второстепенная информация*/
-.text-03{
+.text-03 {
     color: rgba(27, 31, 59, 0.4);
 }
 
 /*Ссылки и текст дополнительных кнопок*/
-.link{
+.link {
     color: #2878CB;
 }
 
 /*Состояние наведения у ссылок и текста дополнительных кнопок*/
-.link-hover{
+.link-hover {
     color: #5AAAFD;
 }
 
 /*Позитивные значения*/
-.positive{
+.positive {
     color: #3aa981;
 }
 
 /*Состояние наведения у Позитивных значений*/
-.positive-hover{
+.positive-hover {
     color: #7ac5aa;
 }
 
 /*Отрицательные значения*/
-.negative{
+.negative {
     color: #DD4C1E;
 }
 
 /*Состояние наведения у отрицательных значений*/
-.negative-hover{
+.negative-hover {
     color: #E38163;
 }
 
-
-
 /*Статусы*/
 /*Иконки или другие элементы ошибки*/
-.error-fill{
+.error-fill {
     background: #f45725;
 }
 
 /*Фон для элементов ошибки*/
-.error-bg{
+.error-bg {
     background: rgba(244, 87, 37, 0.12);
 }
 
 /*Наведённое состояние фона для элементов ошибки*/
-.error-bg-hover{
+.error-bg-hover {
     background: rgba(244, 87, 37, 0.24);
 }
 
 /*Иконки или другие элементы успешного действия*/
-.success-fill{
-    background:#4ac99b;
+.success-fill {
+    background: #4ac99b;
 }
 
 /*Фон для элементов успешного действия*/
-.success-bg{
-    background:rgba(74, 201, 155, 0.12);
+.success-bg {
+    background: rgba(74, 201, 155, 0.12);
 }
 
 /*Наведённое состояние фона для элементов успешного действия*/
-.success-bg-hover{
-    background:rgba(74, 201, 155, 0.24);
+.success-bg-hover {
+    background: rgba(74, 201, 155, 0.24);
 }
 
 /*Иконки или другие элементы предупреждения*/
-.warning-fill{
-    background:#ffc700;
+.warning-fill {
+    background: #ffc700;
 }
 
 /*Фон для элементов предупреждения*/
-.warning-bg{
-    background:rgba(255, 199, 0, 0.12);
+.warning-bg {
+    background: rgba(255, 199, 0, 0.12);
 }
 
 /*Наведённое состояние фона для предупреждающих элементов*/
-.warning-bg-hover{
+.warning-bg-hover {
     background: rgba(255, 199, 0, 0.24);
 }
 
 /*Иконки или другие элементы с информацией*/
-.info-fill{
+.info-fill {
     background: #6EB7F7;
 }
 
 /*Фон для элементов с информацией*/
-.info-bg{
-    background:rgba(112, 182, 246, 0.12);
+.info-bg {
+    background: rgba(112, 182, 246, 0.12);
 }
 
 /*Наведённое состояние фона для информационных элементов*/
-.info-bg-hover{
-    background:rgba(112, 182, 246, 0.24);
+.info-bg-hover {
+    background: rgba(112, 182, 246, 0.24);
 }
 
 /*Иконки или другие элементы с нейтральным значением*/
-.neutral-fill{
-    background:#79818C;
+.neutral-fill {
+    background: #79818C;
 }
 
 /*Фон для нейтральных элементов*/
-.neutral-bg{
-    background:rgba(121, 129, 140, 0.12);
+.neutral-bg {
+    background: rgba(121, 129, 140, 0.12);
 }
 
 /*Наведённое состояние фона для нейтральных элементов*/
-.neutral-bg-hover{
-    background:rgba(121, 129, 140, 0.24);
+.neutral-bg-hover {
+    background: rgba(121, 129, 140, 0.24);
 }
-
-
 
 
 /*Базовые цвета*/
 /*Базовый белый*/
-.base-00{
+.base-00 {
     background: #FFFFFF;
 }
 
 /*Фон страниц*/
-.base-01{
+.base-01 {
     background: #F7F9FB;
 }
 
 /*Дополнительный фон страницы, плитка на основном фоне и фон статических маркеров*/
-.base-02{
+.base-02 {
     background: #f6f6f6;
 }
 
 /*Границы*/
-.base-03{
+.base-03 {
     background: #EDEDED;
 }
 
 /*Подчеркивание и разделители*/
-base-04{
+base-04 {
     background: #D7D7D7;
 }
 
 /*Фон кнопок*/
-.btn-primary{
+.btn-primary {
     background: #0B6CC1;
 }
 
 /*Наведённое состояние кнопок*/
-.btn-primary-hover{
+.btn-primary-hover {
     background: #3394E9;
 }
 
 /*Активное состояние кнопок*/
-.btn-primary-active{
+.btn-primary-active {
     background: #0B6CC1;
 }
 
 /*Дополнительные кнопки*/
-.secondary{
+.secondary {
     background: #EBEFFF;
 }
 
 /*Наведённое состояние дополнительных кнопок*/
-.secondary-hover{
+.secondary-hover {
     background: #DFE3F3;
 }
 
 /*Активное состояние дополнительных кнопок*/
-.secondary-active{
+.secondary-active {
     background: #D8DDF2;
 }
 
 /*Фон акцентных значков или кнопок*/
-.accent{
+.accent {
     background: #E74362;
 }
 
 /*Наведённое состояние акцентных значков или кнопок*/
-.accent-hover{
-    background:#FF6B8A;
+.accent-hover {
+    background: #FF6B8A;
 }
 
 /*Активное состояние  акцентных значков или кнопок*/
-.accent-active{
-    background:#D32F4E;
+.accent-active {
+    background: #D32F4E;
 }
 
-
-
-/*Типографика*/
-h1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 56px;
-}
-
-h2{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 48px;
-}
-
-h3{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 40px;
-}
-
-h4{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 32px;
-}
-
-h5{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-h6{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.text-xl-b{
+.text-xl-b {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -269,7 +228,7 @@ h6{
     line-height: 28px;
 }
 
-.text-xl{
+.text-xl {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -277,7 +236,7 @@ h6{
     line-height: 28px;
 }
 
-.text-l-b{
+.text-l-b {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -285,7 +244,7 @@ h6{
     line-height: 28px;
 }
 
-.text-l{
+.text-l {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -293,7 +252,7 @@ h6{
     line-height: 28px;
 }
 
-.text-m-b{
+.text-m-b {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -301,7 +260,7 @@ h6{
     line-height: 24px;
 }
 
-.text-m{
+.text-m {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -309,7 +268,7 @@ h6{
     line-height: 24px;
 }
 
-.text-s-b{
+.text-s-b {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -317,7 +276,7 @@ h6{
     line-height: 20px;
 }
 
-.text-s{
+.text-s {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -325,7 +284,7 @@ h6{
     line-height: 20px;
 }
 
-.text-xs-b{
+.text-xs-b {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -333,7 +292,7 @@ h6{
     line-height: 20px;
 }
 
-.text-xs{
+.text-xs {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -342,12 +301,12 @@ h6{
 }
 
 
-span::selection,div::selection,h1::selection,h2::selection,h3::selection,h4::selection,h5::selection, a::selection,
-p::selection{
+span::selection, div::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, a::selection,
+p::selection {
     background: var(--selection);
 }
 
-.info-card{
+.info-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,5 +316,74 @@ p::selection{
     background: #fff;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
+}
+
+/*
+** ИЗМЕНЕНИЕ БАЗОВЫХ КЛАССОВ
+*/
+
+body, html {
+    color: #333;
+}
+
+:root {
+    /* Переменная выделения элементов */
+    --selection: rgba(112, 182, 246, 0.3);
+    --animate-duration: .2s;
+    --q-transition-duration: .2s;
+    --animate-delay: .2s;
+}
+
+/* Типографика */
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 56px;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 48px;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.q-dialog__inner>div {
+    min-width: 360px;
 }
 

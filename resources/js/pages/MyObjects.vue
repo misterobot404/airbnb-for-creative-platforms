@@ -1,12 +1,12 @@
 <template>
     <div>
-        Страница не найдена
+        Мои объекты
     </div>
 </template>
 
 <script>
 export default {
-    name: "PageNotFound"
+    name: "MyObjects"
 }
 </script>
 

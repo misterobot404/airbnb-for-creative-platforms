@@ -1,12 +1,12 @@
 <template>
     <div>
-        Страница не найдена
+        Помощь
     </div>
 </template>
 
 <script>
 export default {
-    name: "PageNotFound"
+    name: "Helps"
 }
 </script>
 

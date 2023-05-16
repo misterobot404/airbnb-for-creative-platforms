@@ -1,12 +1,12 @@
 <template>
     <div>
-        Страница не найдена
+        История аренды
     </div>
 </template>
 
 <script>
 export default {
-    name: "PageNotFound"
+    name: "LeaseHistory"
 }
 </script>
 

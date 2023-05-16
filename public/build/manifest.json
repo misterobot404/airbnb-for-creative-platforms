@@ -1,13 +1,51 @@
 {
+  "_vendor-f7294a46.js": {
+    "file": "assets/vendor-f7294a46.js"
+  },
+  "resources/js/assets/fonts/Inter-VariableFont_slnt,wght.ttf": {
+    "file": "assets/Inter-VariableFont_slnt_wght-4a772478.ttf",
+    "src": "resources/js/assets/fonts/Inter-VariableFont_slnt,wght.ttf"
+  },
+  "resources/js/assets/images/LeshaSVO.png": {
+    "file": "assets/LeshaSVO-0aa53c55.png",
+    "src": "resources/js/assets/images/LeshaSVO.png"
+  },
+  "resources/js/assets/images/analysis-amico-1.svg": {
+    "file": "assets/analysis-amico-1-3ac6e64e.svg",
+    "src": "resources/js/assets/images/analysis-amico-1.svg"
+  },
+  "resources/js/assets/images/category_icons/default.svg": {
+    "file": "assets/default-149ace13.svg",
+    "src": "resources/js/assets/images/category_icons/default.svg"
+  },
+  "resources/js/assets/images/logo.png": {
+    "file": "assets/logo-de7e11a1.png",
+    "src": "resources/js/assets/images/logo.png"
+  },
+  "resources/js/assets/images/site-amico-1.svg": {
+    "file": "assets/site-amico-1-e372d105.svg",
+    "src": "resources/js/assets/images/site-amico-1.svg"
+  },
   "resources/js/main.css": {
-    "file": "assets/main-2f1fc720.css",
+    "file": "assets/main-f5be50f3.css",
     "src": "resources/js/main.css"
   },
   "resources/js/main.js": {
-    "css": [
-      "assets/main-2f1fc720.css"
+    "assets": [
+      "assets/default-149ace13.svg",
+      "assets/LeshaSVO-0aa53c55.png",
+      "assets/site-amico-1-e372d105.svg",
+      "assets/analysis-amico-1-3ac6e64e.svg",
+      "assets/logo-de7e11a1.png",
+      "assets/Inter-VariableFont_slnt_wght-4a772478.ttf"
     ],
-    "file": "assets/main-0dcf78e4.js",
+    "css": [
+      "assets/main-f5be50f3.css"
+    ],
+    "file": "assets/main-8d035f37.js",
+    "imports": [
+      "_vendor-f7294a46.js"
+    ],
     "isEntry": true,
     "src": "resources/js/main.js"
   }

@@ -1,12 +1,12 @@
 <template>
     <div>
-        Страница не найдена
+        Избранные объекты
     </div>
 </template>
 
 <script>
 export default {
-    name: "PageNotFound"
+    name: "FavoriteObjects"
 }
 </script>
 
