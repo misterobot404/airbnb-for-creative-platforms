@@ -13,7 +13,7 @@ router.beforeEach(async (to, from, next) => {
 
     // Если пытаемся перейти на защищенную страницу
     if (to.meta.requiresAuth && !user_store.token) {
-        user_store.show_signin = true;
+        user_store.show_signin_dialog = true;
         Notify.create({
             icon: "info",
             message: "Для продолжения необходимо авторизоваться"
