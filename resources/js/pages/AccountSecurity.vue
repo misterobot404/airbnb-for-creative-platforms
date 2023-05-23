@@ -1,11 +1,7 @@
 <template>
     <AccountContainer>
         <div class="row">
-            <div class="col-lg-3 col-md-12 col-xs-12 flex column items-center q-mt-md q-mr-auto">
-                <img src="../assets/images/LeshaSVO.png" alt="Аватарка" style="width: fit-content">
-                <q-btn class="self-center secondary link" label="Загрузить фото" unelevated no-caps />
-            </div>
-            <div class="col-lg-4 col-md-12 col-xs-12 q-mt-md q-mr-auto">
+            <div class="col-lg-7 col-md-12 col-xs-12 q-mt-md q-mr-auto">
                 <div class="column">
                     <span class="text-m-b text-01">Имя по документам</span>
                     <span class="text-xs text-02">Имя здесь должно совпадать с именем в вашем паспорте</span>
@@ -46,24 +42,15 @@
             </div>
             <div class="col-lg-4 col-md-12 col-xs-12 q-mt-md flex column">
                 <div class="info-card">
-                    <img src="../assets/images/site-amico-1.svg" />
-                    <span class="text-m-b text-01">Зачем вносить ваши данные?</span>
-                    <span class="text-s text-01">Для заключения договоров на площадке CreativeHub необходимо подтвердить
-                        вашу личность.
-                        Мы храним все персональные данные в соответствии с ФЗ-152 “О персональных данных”.</span>
-                </div>
-                <div class="info-card q-mt-lg">
-                    <img src="../assets/images/analysis-amico-1.svg">
-                    <span class="text-m-b text-01">Зачем вносить ваши данные?</span>
-                    <span class="text-s text-01">Для заключения договоров на площадке CreativeHub необходимо подтвердить
-                        вашу личность.
-                        Мы храним все персональные данные в соответствии с ФЗ-152 “О персональных данных”.</span>
+                    <img src="../assets/images/OTP-amico 1.svg" />
+                    <span class="text-m-b text-01">Повысьте безопасность аккаунта</span>
+                    <span class="text-s text-01">Безопасность нашего сообщества в приоритете. По этой причине мы проверяем
+                        степень защиты всех аккаунтов.</span>
                 </div>
             </div>
         </div>
     </AccountContainer>
 </template>
-
 <script>
 import { ref } from 'vue';
 import AccountContainer from '../components/AccountContainer.vue';
@@ -71,16 +58,13 @@ import AccountContainer from '../components/AccountContainer.vue';
 export default {
     data() {
         return {
-            text: "Александр",
-            date: "",
-            phone: "+7",
-            mail: "",
-            about: ""
+
         };
     },
     name: "Home",
     components: { AccountContainer }
 }
+
 
 </script>
 

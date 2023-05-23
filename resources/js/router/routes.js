@@ -1,5 +1,6 @@
 import Home from "../pages/Home.vue";
 import Account from "../pages/Account.vue";
+import AccountSecurity from "../pages/AccountSecurity.vue"
 import PageNotFound from "../pages/PageNotFound.vue";
 import LeaseHistory from "../pages/LeaseHistory.vue";
 import LeaseObject from "../pages/LeaseObject.vue";
@@ -13,7 +14,8 @@ export default [
         path: '/',
         component: Home,
         meta: {
-            requiresAuth: false
+            requiresAuth: false,
+            fullWidth: true,
         }
     },
     {
@@ -34,6 +36,13 @@ export default [
     {
         path: '/account',
         component: Account,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: '/account/account_security',
+        component: AccountSecurity,
         meta: {
             requiresAuth: true
         }

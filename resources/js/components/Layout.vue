@@ -7,25 +7,27 @@
                 <!-- Logo -->
                 <div>
                     <router-link to="/">
-                        <img src="../assets/images/logo.png" style="height: 58px">
+                        <img src="../assets/images/logo.svg" style="height: 40px">
                     </router-link>
                 </div>
                 <!-- Search -->
                 <div class="flex-grow-1 flex justify-center">
-                    <q-input outlined v-model="search" placeholder="Найдите площадку мечты" dense style="max-width: 500px" class="flex-grow-1">
+                    <q-input outlined v-model="search" placeholder="Найдите площадку мечты" dense style="max-width: 500px"
+                        class="flex-grow-1">
                         <template v-slot:prepend>
-                            <q-icon name="search"/>
+                            <q-icon name="search" />
                         </template>
                     </q-input>
                 </div>
                 <!-- User panel -->
                 <div class="flex">
-                    <q-btn label="Сдать в аренду" flat no-caps class="self-center btn-p-sm" style="height: 40px; margin-right: 12px;" to="/lease_object"/>
+                    <q-btn label="Сдать в аренду" flat no-caps class="self-center btn-p-sm"
+                        style="height: 40px; margin-right: 12px;" to="/lease_object" />
                     <div>
                         <template v-if="USER_STORE.user">
                             <div class="user-panel">
-                                <q-icon name="menu" size="24px"/>
-                                <q-icon name="o_account_circle" size="24px" class="q-ml-sm q-mr-xs"/>
+                                <q-icon name="menu" size="24px" />
+                                <q-icon name="o_account_circle" size="24px" class="q-ml-sm q-mr-xs" />
                                 <span>{{ USER_STORE.user.name }}</span>
                             </div>
                             <q-menu auto-close fit :offset="[0, 4]">
@@ -38,7 +40,7 @@
                                     </template>
                                     <!--  Ссылки на страницы -->
                                     <q-item v-for="link in user_panel_links" :to="link.to" clickable>
-                                        <q-item-section class="text-size-sm" v-text="link.title"/>
+                                        <q-item-section class="text-size-sm" v-text="link.title" />
                                     </q-item>
                                     <!-- Выход из аккаунта -->
                                     <q-item clickable @click="logout()">
@@ -49,33 +51,35 @@
                         </template>
                         <template v-else>
                             <div class="user-panel" @click="USER_STORE.show_signin_dialog = true">
-                                <q-icon name="menu" size="24px" class="q-mr-sm"/>
-                                <q-icon name="o_account_circle" size="24px"/>
+                                <q-icon name="menu" size="24px" class="q-mr-sm" />
+                                <q-icon name="o_account_circle" size="24px" />
                             </div>
                         </template>
                     </div>
                 </div>
             </div>
-            <q-separator/>
+            <q-separator />
         </header>
         <!-- Page -->
-        <main>
-            <slot/>
+        <main class="flex justify-center full-width">
+            <div :class="$route.meta.fullWidth ? 'full-width' : 'page-default-width'">
+                <slot />
+            </div>
         </main>
         <!-- Global components -->
-        <SigninDialog/>
-        <SignupDialog/>
+        <SigninDialog />
+        <SignupDialog />
     </div>
 </template>
 
 <script>
-import {useUserStore} from "../stores/user";
+import { useUserStore } from "../stores/user";
 import SigninDialog from "./SigninDialog.vue";
 import SignupDialog from "./SignupDialog.vue";
 
 export default {
     name: "Layout",
-    components: {SignupDialog, SigninDialog},
+    components: { SignupDialog, SigninDialog },
     data() {
         return {
             USER_STORE: useUserStore(),
@@ -109,7 +113,7 @@ export default {
         logout() {
             this.USER_STORE.logout()
                 .then(() => {
-                    this.$q.notify({type: "positive", message: "Вы вышли из своей учётной записи"});
+                    this.$q.notify({ type: "positive", message: "Вы вышли из своей учётной записи" });
                     if (this.$route.meta.requiresAuth) {
                         this.$router.push("/");
                     }
@@ -134,8 +138,8 @@ export default {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
 }
 
-.border-radius-lg :deep(.q-field__control), .border-radius-lg :deep(.q-btn--rectangle) {
+.border-radius-lg :deep(.q-field__control),
+.border-radius-lg :deep(.q-btn--rectangle) {
     border-radius: 8px;
 }
-
 </style>

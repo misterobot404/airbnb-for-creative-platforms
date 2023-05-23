@@ -6,30 +6,25 @@
                 <div class="text-01">{{ category.title }}</div>
             </div>
         </div>
-        <YandexMap
-                :coordinates="[55.75, 37.57]"
-                :zoom="11"
-                :detailed-controls="map_detailed_controls"
-                :controls="map_controls"
-                style="height: calc(100vh - 92px - 80px)"
-        >
-            <YandexMarker :coordinates="[55.684381, 37.339849]"/>
+        <YandexMap :coordinates="[55.75, 37.57]" :zoom="11" :detailed-controls="map_detailed_controls"
+            :controls="map_controls" style="height: calc(100vh - 92px - 80px)">
+            <YandexMarker :coordinates="[55.684381, 37.339849]" />
         </YandexMap>
     </div>
 </template>
 
 <script>
-import {YandexMap, YandexMarker} from 'vue-yandex-maps'
+import { YandexMap, YandexMarker } from 'vue-yandex-maps'
 import imageUrl from '../assets/images/category_icons/default.svg'
 
 export default {
     name: "Home",
-    components: {YandexMarker, YandexMap},
+    components: { YandexMarker, YandexMap },
     data() {
         return {
             map: null,
             map_controls: ['typeSelector', 'trafficControl', 'fullscreenControl'],
-            map_detailed_controls: {zoomControl: {position: {right: 10, top: 50}}},
+            map_detailed_controls: { zoomControl: { position: { right: 10, top: 50 } } },
 
             categories: [
                 {
@@ -91,6 +86,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
