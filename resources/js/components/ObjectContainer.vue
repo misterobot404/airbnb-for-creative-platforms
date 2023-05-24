@@ -5,10 +5,10 @@
                 <div class="col-12">
                     <div class="q-gutter-y-md" style="width: fit-content;">
                         <q-tabs v-model="tab" class="text-01 text-m" indicator-color="primary" no-caps>
-                            <q-route-tab name="profile" to="/account" label="Мой профиль" />
-                            <q-route-tab name="security" to="/account/account_security" label="Безопасность" />
-                            <q-route-tab name="payments" to="/account/account_payment" label="Платежи" />
-                            <q-route-tab name="notifications" to="/account/account_notification" label="Уведомления" />
+                            <q-route-tab name="myObjects" to="/my_objects" label="Мои объекты" />
+                            <q-route-tab name="booking" to="/my_objects/booking" label="Бронирования"> <q-badge color="red"
+                                    floating>2</q-badge> </q-route-tab>
+                            <q-route-tab name="finance" to="/my_objects/finance" label="Финансы" />
                         </q-tabs>
                     </div>
                 </div>

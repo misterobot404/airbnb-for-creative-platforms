@@ -1,7 +1,7 @@
 <template>
     <div class="q-px-lg q-py-md">
         <q-timeline color="secondary">
-            <q-timeline-entry heading body="Ответы на часто задаваемые вопросы" />
+            <h5 class="q-my-lg">Ответы на часто задаваемые вопросы</h5>
 
             <q-timeline-entry v-for="item in items" :title="item.title" :body="item.body" />
 

@@ -9,6 +9,8 @@ import LeaseObject from "../pages/LeaseObject.vue";
 import Helps from "../pages/Helps.vue";
 import FavoriteObjects from "../pages/FavoriteObjects.vue";
 import MyObjects from "../pages/MyObjects.vue";
+import MyObjectsBooking from '../pages/MyObjectsBooking.vue'
+import MyObjectsFinance from '../pages/MyObjectsFinance.vue'
 
 export default [
     /* Страницы доступны всем пользователям */
@@ -87,6 +89,20 @@ export default [
     {
         path: '/my_objects',
         component: MyObjects,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: '/my_objects/booking',
+        component: MyObjectsBooking,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: '/my_objects/finance',
+        component: MyObjectsFinance,
         meta: {
             requiresAuth: true
         }

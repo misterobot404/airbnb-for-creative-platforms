@@ -1,8 +1,7 @@
 <template>
     <ObjectContainer>
         <div>
-            <h6 class="q-my-lg"> Мои объекты </h6>
-            <q-btn class="btn-primary" size="13px" flat icon="add" label="Создать объявление" />
+            <h1>Финансы</h1>
         </div>
     </ObjectContainer>
 </template>

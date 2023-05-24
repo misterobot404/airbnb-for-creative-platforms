@@ -1,10 +1,14 @@
 {
-  "_vendor-9a6ab010.js": {
-    "file": "assets/vendor-9a6ab010.js"
+  "_vendor-5ec90426.js": {
+    "file": "assets/vendor-5ec90426.js"
   },
   "resources/js/assets/fonts/Inter-VariableFont_slnt,wght.ttf": {
     "file": "assets/Inter-VariableFont_slnt_wght-4a772478.ttf",
     "src": "resources/js/assets/fonts/Inter-VariableFont_slnt,wght.ttf"
+  },
+  "resources/js/assets/images/E-Wallet-amico-1.svg": {
+    "file": "assets/E-Wallet-amico-1-bad499a0.svg",
+    "src": "resources/js/assets/images/E-Wallet-amico-1.svg"
   },
   "resources/js/assets/images/LeshaSVO.png": {
     "file": "assets/LeshaSVO-0aa53c55.png",
@@ -13,6 +17,10 @@
   "resources/js/assets/images/Logo.svg": {
     "file": "assets/Logo-00950b74.svg",
     "src": "resources/js/assets/images/Logo.svg"
+  },
+  "resources/js/assets/images/Mail-amico-1.svg": {
+    "file": "assets/Mail-amico-1-7a9a1089.svg",
+    "src": "resources/js/assets/images/Mail-amico-1.svg"
   },
   "resources/js/assets/images/OTP-amico-1.svg": {
     "file": "assets/OTP-amico-1-f2d66faf.svg",
@@ -26,9 +34,17 @@
     "file": "assets/default-149ace13.svg",
     "src": "resources/js/assets/images/category_icons/default.svg"
   },
+  "resources/js/assets/images/logos_mir.svg": {
+    "file": "assets/logos_mir-6eeaa499.svg",
+    "src": "resources/js/assets/images/logos_mir.svg"
+  },
   "resources/js/assets/images/site-amico-1.svg": {
     "file": "assets/site-amico-1-e372d105.svg",
     "src": "resources/js/assets/images/site-amico-1.svg"
+  },
+  "resources/js/assets/images/solar_ruble-broken.svg": {
+    "file": "assets/solar_ruble-broken-bcc60a67.svg",
+    "src": "resources/js/assets/images/solar_ruble-broken.svg"
   },
   "resources/js/main.css": {
     "file": "assets/main-d30f91b7.css",
@@ -41,15 +57,19 @@
       "assets/site-amico-1-e372d105.svg",
       "assets/analysis-amico-1-3ac6e64e.svg",
       "assets/OTP-amico-1-f2d66faf.svg",
+      "assets/logos_mir-6eeaa499.svg",
+      "assets/solar_ruble-broken-bcc60a67.svg",
+      "assets/E-Wallet-amico-1-bad499a0.svg",
+      "assets/Mail-amico-1-7a9a1089.svg",
       "assets/Logo-00950b74.svg",
       "assets/Inter-VariableFont_slnt_wght-4a772478.ttf"
     ],
     "css": [
       "assets/main-d30f91b7.css"
     ],
-    "file": "assets/main-ad077ad8.js",
+    "file": "assets/main-6f5417d5.js",
     "imports": [
-      "_vendor-9a6ab010.js"
+      "_vendor-5ec90426.js"
     ],
     "isEntry": true,
     "src": "resources/js/main.js"

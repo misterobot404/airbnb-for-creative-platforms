@@ -1,7 +1,9 @@
 <template>
-    <div>
-        История аренды
-    </div>
+    <q-layout>
+        <q-page-container>
+            <h5 class="q-my-lg">История аренды</h5>
+        </q-page-container>
+    </q-layout>
 </template>
 
 <script>
@@ -10,6 +12,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
