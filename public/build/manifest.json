@@ -1,6 +1,6 @@
 {
-  "_vendor-f7294a46.js": {
-    "file": "assets/vendor-f7294a46.js"
+  "_vendor-9a6ab010.js": {
+    "file": "assets/vendor-9a6ab010.js"
   },
   "resources/js/assets/fonts/Inter-VariableFont_slnt,wght.ttf": {
     "file": "assets/Inter-VariableFont_slnt_wght-4a772478.ttf",
@@ -10,6 +10,14 @@
     "file": "assets/LeshaSVO-0aa53c55.png",
     "src": "resources/js/assets/images/LeshaSVO.png"
   },
+  "resources/js/assets/images/Logo.svg": {
+    "file": "assets/Logo-00950b74.svg",
+    "src": "resources/js/assets/images/Logo.svg"
+  },
+  "resources/js/assets/images/OTP-amico-1.svg": {
+    "file": "assets/OTP-amico-1-f2d66faf.svg",
+    "src": "resources/js/assets/images/OTP-amico-1.svg"
+  },
   "resources/js/assets/images/analysis-amico-1.svg": {
     "file": "assets/analysis-amico-1-3ac6e64e.svg",
     "src": "resources/js/assets/images/analysis-amico-1.svg"
@@ -18,16 +26,12 @@
     "file": "assets/default-149ace13.svg",
     "src": "resources/js/assets/images/category_icons/default.svg"
   },
-  "resources/js/assets/images/logo.png": {
-    "file": "assets/logo-de7e11a1.png",
-    "src": "resources/js/assets/images/logo.png"
-  },
   "resources/js/assets/images/site-amico-1.svg": {
     "file": "assets/site-amico-1-e372d105.svg",
     "src": "resources/js/assets/images/site-amico-1.svg"
   },
   "resources/js/main.css": {
-    "file": "assets/main-f5be50f3.css",
+    "file": "assets/main-d30f91b7.css",
     "src": "resources/js/main.css"
   },
   "resources/js/main.js": {
@@ -36,15 +40,16 @@
       "assets/LeshaSVO-0aa53c55.png",
       "assets/site-amico-1-e372d105.svg",
       "assets/analysis-amico-1-3ac6e64e.svg",
-      "assets/logo-de7e11a1.png",
+      "assets/OTP-amico-1-f2d66faf.svg",
+      "assets/Logo-00950b74.svg",
       "assets/Inter-VariableFont_slnt_wght-4a772478.ttf"
     ],
     "css": [
-      "assets/main-f5be50f3.css"
+      "assets/main-d30f91b7.css"
     ],
-    "file": "assets/main-41d7db78.js",
+    "file": "assets/main-ad077ad8.js",
     "imports": [
-      "_vendor-f7294a46.js"
+      "_vendor-9a6ab010.js"
     ],
     "isEntry": true,
     "src": "resources/js/main.js"

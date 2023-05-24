@@ -21,7 +21,7 @@
                 </div>
                 <!-- User panel -->
                 <div class="flex">
-                    <q-btn label="Сдать в аренду" flat no-caps class="self-center btn-p-sm"
+                    <q-btn label="Сдать в аренду" flat no-caps class="self-center btn-p-sm link"
                         style="height: 40px; margin-right: 12px;" to="/lease_object" />
                     <div>
                         <template v-if="USER_STORE.user">

@@ -1,6 +1,8 @@
 import Home from "../pages/Home.vue";
 import Account from "../pages/Account.vue";
 import AccountSecurity from "../pages/AccountSecurity.vue"
+import AccountPayment from "../pages/AccountPayment.vue"
+import AccountNotification from "../pages/AccountNotification.vue"
 import PageNotFound from "../pages/PageNotFound.vue";
 import LeaseHistory from "../pages/LeaseHistory.vue";
 import LeaseObject from "../pages/LeaseObject.vue";
@@ -43,6 +45,20 @@ export default [
     {
         path: '/account/account_security',
         component: AccountSecurity,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: "/account/account_payment",
+        component: AccountPayment,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: "/account/account_notification",
+        component: AccountNotification,
         meta: {
             requiresAuth: true
         }
