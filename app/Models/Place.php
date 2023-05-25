@@ -50,4 +50,12 @@ class Place extends Model
     public function category() : BelongsTo {
         return $this->belongsTo(Category::class, 'category_id');
     }
+
+    /**
+     * Возможность автоматического заключения сделки
+     */
+    public function getAutodealAttribute()
+    {
+        return $this->minimal_autodeal_rating !== null;
+    }
 }
