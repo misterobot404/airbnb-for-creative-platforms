@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\ObjectsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,4 +25,9 @@ Route::post('/login', [AuthController::class, 'login']);
 // Для авторизованных пользователей
 Route::middleware('auth:api')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
+
+    Route::post('/objects', [ObjectsController::class, 'store'])->name('api.object.create');
+    Route::post('/objects/{object}', [ObjectsController::class, 'update'])->name('api.object.update');
+    Route::delete('/objects/{object}', [ObjectsController::class, 'destroy'])->name('api.object.delete');
 });
+Route::get('/objects', [ObjectsController::class, 'index'])->name('api.objects');
