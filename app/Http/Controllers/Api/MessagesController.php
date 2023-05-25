@@ -5,36 +5,36 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Routing\Controller as BaseController;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\StoreDealRequest;
-use App\Models\Deal;
+use App\Http\Requests\StoreMessageRequest;
+use App\Models\Message;
 
-class DealsController extends BaseController
+class MessagesController extends BaseController
 {
     public function index(Request $request)
     {
-        return Place::full();
+        return Message::full();
     }
 
     public function info($obj)
     {
-        return Deal::where('id', $obj)->first();
+        return Message::where('id', $obj)->first();
     }
 
-    public function store(StoreDealRequest $request)
+    public function store(StoreMessageRequest $request)
     {
         $data = $request->validated();
-        Deal::create($data);
+        Message::create($data);
         return response()->json(['success' => true], 201);
     }
 
-    public function update(StoreDealRequest $request, Deal $obj)
+    public function update(StoreMessageRequest $request, Message $obj)
     {
         $data = $request->validated();
         $obj->update($data);
         return response()->json(['success' => true], 201);
     }
 
-    public function destroy(Deal $obj)
+    public function destroy(Message $obj)
     {
         $obj->delete();
         return response()->json(['success' => true], 200);

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ObjectsController;
 use App\Http\Controllers\Api\DealsController;
+use App\Http\Controllers\Api\MessagesController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +35,10 @@ Route::middleware('auth:api')->group(function () {
     Route::post('/deals', [DealsController::class, 'store'])->name('api.deals.create');
     Route::post('/deals/{deal}', [DealsController::class, 'update'])->name('api.deals.update');
     Route::delete('/deals/{deal}', [DealsController::class, 'destroy'])->name('api.deals.delete');
+
+    Route::post('/messages', [MessagesController::class, 'store'])->name('api.messages.create');
+    Route::post('/messages/{message}', [MessagesController::class, 'update'])->name('api.messages.update');
+    Route::delete('/messages/{message}', [MessagesController::class, 'destroy'])->name('api.messages.delete');
 });
 Route::get('/objects/{object}', [ObjectsController::class, 'info'])->name('api.object.info');
 Route::get('/objects', [ObjectsController::class, 'index'])->name('api.objects');
@@ -41,3 +46,4 @@ Route::get('/objects/same', [ObjectsController::class, 'same'])->name('api.objec
 
 Route::get('/deals/{deal}', [DealsController::class, 'info'])->name('api.deals.info');
 Route::get('/deals', [DealsController::class, 'index'])->name('api.deals');
+

@@ -22,9 +22,9 @@ class Message extends Model
      */
     protected $fillable = [
         'text',
-        'customer_id',
         'receiver_user_id',
         'sender_user_id',
+        'readed_by_receiver',
     ];
 
     public function receiver() : BelongsTo {
