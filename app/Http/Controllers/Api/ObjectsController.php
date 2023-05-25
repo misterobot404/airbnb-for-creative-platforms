@@ -22,6 +22,11 @@ class ObjectsController extends BaseController
         return Place::where('category_id', '=', $category)->get();
     }
 
+    public function info($obj)
+    {
+        return Place::where('id', $obj)->first();
+    }
+
     public function store(StoreObjectRequest $request)
     {
         $data = $request->validated();

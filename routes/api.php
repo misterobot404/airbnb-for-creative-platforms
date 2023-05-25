@@ -30,5 +30,6 @@ Route::middleware('auth:api')->group(function () {
     Route::post('/objects/{object}', [ObjectsController::class, 'update'])->name('api.object.update');
     Route::delete('/objects/{object}', [ObjectsController::class, 'destroy'])->name('api.object.delete');
 });
+Route::get('/objects/{object}', [ObjectsController::class, 'info'])->name('api.object.info');
 Route::get('/objects', [ObjectsController::class, 'index'])->name('api.objects');
 Route::get('/objects/same', [ObjectsController::class, 'same'])->name('api.objects.same');
