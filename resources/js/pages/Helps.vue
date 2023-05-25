@@ -6,7 +6,7 @@
             <q-timeline-entry v-for="item in items" :title="item.title" :body="item.body" />
 
         </q-timeline>
-    </div>
+    </div>git
 </template>
 
 <script>
