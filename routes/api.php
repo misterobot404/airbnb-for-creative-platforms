@@ -31,3 +31,4 @@ Route::middleware('auth:api')->group(function () {
     Route::delete('/objects/{object}', [ObjectsController::class, 'destroy'])->name('api.object.delete');
 });
 Route::get('/objects', [ObjectsController::class, 'index'])->name('api.objects');
+Route::get('/objects/same', [ObjectsController::class, 'same'])->name('api.objects.same');

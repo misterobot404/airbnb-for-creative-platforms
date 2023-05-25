@@ -2,18 +2,24 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller as BaseController;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreObjectRequest;
 use App\Http\Requests\UpdateObjectRequest;
 use App\Models\Place;
 
-class ObjectsController extends Controller
+class ObjectsController extends BaseController
 {
-    public function index()
+    public function index(Request $request)
     {
         return Place::full();
+    }
+
+    public function same(Request $request)
+    {
+        $category = $request->input('category');
+        return Place::where('category_id', '=', $category)->get();
     }
 
     public function store(StoreObjectRequest $request)
