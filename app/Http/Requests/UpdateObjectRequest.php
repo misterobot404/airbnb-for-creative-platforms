@@ -23,6 +23,7 @@ class UpdateObjectRequest extends FormRequest
     {
         return [
             'category_id' => 'sometimes | integer',
+            'owner_user_id' => 'required | integer',
             'title' => 'sometimes | string',
             'description' => 'sometimes | string',
             'rating' => 'sometimes | numeric',

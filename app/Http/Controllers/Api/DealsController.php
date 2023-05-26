@@ -39,4 +39,8 @@ class DealsController extends BaseController
         $obj->delete();
         return response()->json(['success' => true], 200);
     }
+
+    public function user_deals(User $user) {
+        return $user->deals;
+    }
 }

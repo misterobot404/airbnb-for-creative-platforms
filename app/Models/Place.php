@@ -23,6 +23,7 @@ class Place extends Model
      */
     protected $fillable = [
         'category_id',
+        'owner_user_id',
         'title',
         'description',
         'rating',

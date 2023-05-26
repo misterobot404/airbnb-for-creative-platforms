@@ -23,6 +23,7 @@ class StoreObjectRequest extends FormRequest
     {
         return [
             'category_id' => 'required | integer',
+            'owner_user_id' => 'required | integer',
             'title' => 'required | string',
             'description' => 'required | string',
             'rating' => 'required | numeric',

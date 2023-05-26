@@ -39,4 +39,11 @@ class MessagesController extends BaseController
         $obj->delete();
         return response()->json(['success' => true], 200);
     }
+
+    public function user_messages(User $user) {
+        $pool = [];
+        $pool['incomes'] = $user->income_messages();
+        $pool['outcomes'] = $user->outcome_messages();
+        return $pool;
+    }
 }

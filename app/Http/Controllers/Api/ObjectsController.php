@@ -46,4 +46,8 @@ class ObjectsController extends BaseController
         $obj->delete();
         return response()->json(['success' => true], 200);
     }
+
+    public function user_objects(User $user) {
+        return $user->objects;
+    }
 }
