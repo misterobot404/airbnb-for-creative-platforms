@@ -55,7 +55,8 @@ export default {
 
 
 .navigator {
-    
+    position: absolute;
+    bottom: 0;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
     padding: 8px 16px;
 }
