@@ -35,7 +35,7 @@
 
 /*Основной цвет и заголовки*/
 .text-01 {
-    color: #1B1F3B;
+    color: #1B1F3B ;
 }
 
 /*Вторичный текст и описание*/
@@ -184,16 +184,19 @@ base-04 {
 /*Фон кнопок*/
 .btn-primary {
     background: #0B6CC1;
+    color: white;
 }
 
 /*Наведённое состояние кнопок*/
-.btn-primary-hover {
+.btn-primary:hover {
     background: #3394E9;
+    color: white;
 }
 
 /*Активное состояние кнопок*/
-.btn-primary-active {
+.btn-primary:active {
     background: #0B6CC1;
+    color: white;
 }
 
 /*Дополнительные кнопки*/
