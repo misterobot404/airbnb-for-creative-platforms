@@ -7,7 +7,7 @@
         <!-- Logo -->
         <div>
           <router-link to="/">
-            <img src="../assets/images/logo.svg" style="height: 40px">
+            <img src="../assets/images/logo-header.svg" style="height: 40px">
           </router-link>
         </div>
         <!-- Search -->

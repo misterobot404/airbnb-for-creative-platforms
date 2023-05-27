@@ -34,9 +34,9 @@
     "file": "assets/analysis-amico-1-3ac6e64e.svg",
     "src": "resources/js/assets/images/analysis-amico-1.svg"
   },
-  "resources/js/assets/images/logo.svg": {
-    "file": "assets/logo-00950b74.svg",
-    "src": "resources/js/assets/images/logo.svg"
+  "resources/js/assets/images/logo-header.svg": {
+    "file": "assets/logo-header-00950b74.svg",
+    "src": "resources/js/assets/images/logo-header.svg"
   },
   "resources/js/assets/images/logos_mir.svg": {
     "file": "assets/logos_mir-6eeaa499.svg",
@@ -55,7 +55,7 @@
     "src": "resources/js/assets/images/solar_ruble-broken.svg"
   },
   "resources/js/main.css": {
-    "file": "assets/main-022eab9a.css",
+    "file": "assets/main-e4a226d0.css",
     "src": "resources/js/main.css"
   },
   "resources/js/main.js": {
@@ -71,13 +71,13 @@
       "assets/Mail-amico-1-7a9a1089.svg",
       "assets/Point-eac2d1e9.svg",
       "assets/prev_ui_1-0bda1fdc.png",
-      "assets/logo-00950b74.svg",
+      "assets/logo-header-00950b74.svg",
       "assets/Inter-VariableFont_slnt_wght-4a772478.ttf"
     ],
     "css": [
-      "assets/main-022eab9a.css"
+      "assets/main-e4a226d0.css"
     ],
-    "file": "assets/main-cf6ce114.js",
+    "file": "assets/main-34d816be.js",
     "imports": [
       "_vendor-a7bfdf8a.js"
     ],
