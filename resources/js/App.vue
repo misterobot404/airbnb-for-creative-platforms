@@ -1,7 +1,7 @@
 <template>
-    <Layout>
-        <router-view/>
-    </Layout>
+  <Layout>
+    <router-view/>
+  </Layout>
 </template>
 
 <script>
@@ -10,13 +10,18 @@ import axios from "axios";
 import {useUserStore} from "./stores/user";
 
 export default {
-    name: "App",
-    components: {Layout},
-    beforeMount() {
-        if (useUserStore().token) {
-            axios.defaults.headers.common['Authorization'] = 'Bearer ' + this.token;
-        }
+  name: "App",
+  components: {Layout},
+  methods: {
+    initApp() {
+
     }
+  },
+  beforeMount() {
+    if (useUserStore().token) {
+      axios.defaults.headers.common['Authorization'] = 'Bearer ' + this.token;
+    }
+  }
 }
 </script>
 

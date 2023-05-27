@@ -2,45 +2,36 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Models\Category;
 use Illuminate\Routing\Controller as BaseController;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\StoreDealRequest;
-use App\Models\Deal;
+use App\Http\Requests\StoreCategoryRequest;
 
-class DealsController extends BaseController
+class CategoriesController extends BaseController
 {
     public function index(Request $request)
     {
-        return Place::all();
+        return Category::all();
     }
 
-    public function info($obj)
-    {
-        return Deal::where('id', $obj)->first();
-    }
-
-    public function store(StoreDealRequest $request)
+    public function store(StoreCategoryRequest $request)
     {
         $data = $request->validated();
-        Deal::create($data);
+        Category::create($data);
         return response()->json(['success' => true], 201);
     }
 
-    public function update(StoreDealRequest $request, Deal $obj)
+    public function update(StoreCategoryRequest $request, Category $obj)
     {
         $data = $request->validated();
         $obj->update($data);
         return response()->json(['success' => true], 201);
     }
 
-    public function destroy(Deal $obj)
+    public function destroy(Category $obj)
     {
         $obj->delete();
         return response()->json(['success' => true], 200);
-    }
-
-    public function user_deals(User $user) {
-        return $user->deals;
     }
 }

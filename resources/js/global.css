@@ -15,6 +15,10 @@
     border-radius: 8px;
 }
 
+.border-radius-md {
+    border-radius: 6px;
+}
+
 .btn-p-sm {
     padding: 0 12px;
 }
@@ -24,13 +28,12 @@
 }
 
 .page-padding {
-    padding: 0 80px;
+    padding: 0 120px;
 }
 
 .page-default-width {
     max-width: 1180px;
     width: 1180px;
-
 }
 
 /*Основной цвет и заголовки*/

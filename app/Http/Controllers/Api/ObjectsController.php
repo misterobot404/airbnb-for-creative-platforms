@@ -13,7 +13,7 @@ class ObjectsController extends BaseController
 {
     public function index(Request $request)
     {
-        return Place::full();
+        return Place::all();
     }
 
     public function same(Request $request)

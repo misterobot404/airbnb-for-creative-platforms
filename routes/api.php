@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\CategoriesController;
 use App\Http\Controllers\Api\ObjectsController;
 use App\Http\Controllers\Api\DealsController;
 use App\Http\Controllers\Api\MessagesController;
@@ -23,6 +24,14 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
 // Для всех пользователей
+Route::get('/categories', [CategoriesController::class, 'index']);
+
+Route::get('/objects', [ObjectsController::class, 'index'])->name('api.objects');
+Route::get('/objects/{object}', [ObjectsController::class, 'info'])->name('api.object.info');
+Route::get('/objects/same', [ObjectsController::class, 'same'])->name('api.objects.same');
+
+Route::get('/deals/{deal}', [DealsController::class, 'info'])->name('api.deals.info');
+Route::get('/deals', [DealsController::class, 'index'])->name('api.deals');
 
 // Для авторизованных пользователей
 Route::middleware('auth:api')->group(function () {
@@ -43,10 +52,5 @@ Route::middleware('auth:api')->group(function () {
     Route::delete('/messages/{message}', [MessagesController::class, 'destroy'])->name('api.messages.delete');
     Route::get('/users/{user}/messages', [MessagesController::class, 'user_messages'])->name('api.messages.byuser');
 });
-Route::get('/objects/{object}', [ObjectsController::class, 'info'])->name('api.object.info');
-Route::get('/objects', [ObjectsController::class, 'index'])->name('api.objects');
-Route::get('/objects/same', [ObjectsController::class, 'same'])->name('api.objects.same');
 
-Route::get('/deals/{deal}', [DealsController::class, 'info'])->name('api.deals.info');
-Route::get('/deals', [DealsController::class, 'index'])->name('api.deals');
 

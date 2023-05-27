@@ -11,6 +11,7 @@ import FavoriteObjects from "../pages/FavoriteObjects.vue";
 import MyObjects from "../pages/MyObjects.vue";
 import MyObjectsBooking from '../pages/MyObjectsBooking.vue'
 import MyObjectsFinance from '../pages/MyObjectsFinance.vue'
+import LeasePrevious from "@/pages/LeasePrevious.vue";
 
 export default [
     /* Страницы доступны всем пользователям */
@@ -70,6 +71,13 @@ export default [
         component: FavoriteObjects,
         meta: {
             requiresAuth: true
+        }
+    },
+    {
+        path: '/lease_previous',
+        component: LeasePrevious,
+        meta: {
+            requiresAuth: false
         }
     },
     {

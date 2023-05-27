@@ -12,7 +12,7 @@ class MessagesController extends BaseController
 {
     public function index(Request $request)
     {
-        return Message::full();
+        return Message::all();
     }
 
     public function info($obj)

@@ -1,63 +1,91 @@
 <template>
-    <component :is="activeStep" />
-    <div class="row q-mt-lg justify-center">
-        <div class="navigator flex items-center">
-            <div class="col">
-                <q-btn @click="$refs.stepper.previous(), activeStep = 'Step0'" color="primary" label="Назад" outline
-                    no-caps />
-            </div>
-            <div class="col-10 flex ">
-                <q-stepper v-model="step" ref="stepper" color="primary" flat alternative-labels>
-                    <q-step :name="1" title="Объект и его характеристики" :done="step > 1" />
-
-                    <q-step :name="2" title="Местоположение" icon="place" :done="step > 2" />
-
-                    <q-step :name="3" title="Цена" icon="money" :done="step > 3" />
-
-                    <q-step :name="4" title="Публикация" icon="assignment" />
-
-                </q-stepper>
-            </div>
-            <div class="col">
-                <q-btn @click="$refs.stepper.next(), activeStep = 'Step1'" color="primary" no-caps unelevated
-                    :label="step === 4 ? 'Готово' : 'Далее'" />
-            </div>
-        </div>
+  <!-- Активный шаг создания объекта -->
+  <component :is="active_step"/>
+  <!-- Навигация между шагами -->
+  <div class="row q-mt-lg justify-center">
+    <div class="navigator flex items-center">
+      <q-btn @click="step === 1 ? $router.push('/lease_previous') : $refs.stepper.previous()" flat text-color="primary" label="Назад" outline no-caps style="padding: 10px 18px; background-color: #EBEFFF"
+             class="q-mb-lg" icon="arrow_back"/>
+      <div class="flex q-mx-lg">
+        <q-stepper v-model="step" ref="stepper" color="primary" flat alternative-labels>
+          <q-step :name="1" title="Объект и его характеристики" :done="step > 3" icon="edit" color="primary"/>
+          <q-step :name="2"/>
+          <q-step :name="3"/>
+          <q-step :name="4" title="Местоположение" icon="place" :done="step > 4"/>
+          <q-step :name="5" title="Цена" icon="money" :done="step > 5"/>
+          <q-step :name="6" title="Публикация" icon="assignment"/>
+        </q-stepper>
+      </div>
+      <q-btn @click="$refs.stepper.next()" color="primary" style="padding: 10px 18px" no-caps unelevated :label="step === 4 ? 'Готово' : 'Далее'" class="q-mb-lg" icon-right="arrow_forward"/>
     </div>
+  </div>
 </template>
 
 <script>
-import { ref } from 'vue'
-import Step0 from '../components/Lease/Step0.vue'
-import Step1 from '../components/Lease/Step1.vue'
-
-
+import Step1 from "@/components/LeaseObject/Step1.vue";
+import Step2 from "@/components/LeaseObject/Step2.vue";
+import Step3 from "@/components/LeaseObject/Step3.vue";
 
 export default {
-    data() {
-        return {
-            activeStep: 'Step0',
-            step: ref(1)
-        };
-    },
-    name: "LeaseObject",
-    components: {
-        Step0,
-        Step1,
+  name: "LeaseObject",
+  components: {Step1, Step2, Step3},
+  data() {
+    return {
+      step: 1
     }
+  },
+  computed: {
+    active_step() {
+      switch (this.step) {
+        case 1:
+          return 'Step1';
+        case 2:
+          return 'Step2';
+        case 3:
+          return 'Step3';
+      }
+    }
+  }
 }
 </script>
 
 <style scoped>
 :deep(.q-panel-parent) {
-    display: none !important;
+  display: none !important;
 }
 
+>>> .on-left {
+  margin-right: 6px;
+}
+
+>>> .on-right {
+  margin-left: 6px;
+}
+
+>>> .q-stepper__title {
+  width: 115px;
+}
+
+>>> .q-stepper__dot {
+  font-size: 16px;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+}
 
 .navigator {
-    position: absolute;
-    bottom: 0;
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
-    padding: 8px 16px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14);
+  padding: 4px 36px;
 }
+
+>>> .q-stepper__tab:nth-child(2), >>> .q-stepper__tab:nth-child(3) {
+  display: none;
+}
+
+/*>>> .q-stepper__tab {
+  display: none;
+}*/
 </style>
+
