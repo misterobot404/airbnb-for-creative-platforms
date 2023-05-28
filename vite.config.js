@@ -4,7 +4,6 @@ import { splitVendorChunkPlugin } from 'vite'
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-    server: { https: true },
     build: {
         chunkSizeWarningLimit: 1000
     },

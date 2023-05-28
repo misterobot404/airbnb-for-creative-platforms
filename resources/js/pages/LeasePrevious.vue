@@ -5,7 +5,7 @@
       <h1 class="text-01">Сдать объект проще вместе с CreativeHub</h1>
     </div>
     <div class="col-6">
-      <q-img src="/assets/images/prev_ui_1.png" style="width: 500px" no-spinner/>
+      <q-img src="/assets/images/prev_ui_1.png" style="width: 480px" no-spinner/>
     </div>
     <div class="col-6">
       <h5 class="text-01">Три шага, чтобы сдать объект в аренду</h5>

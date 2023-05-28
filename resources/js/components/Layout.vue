@@ -1,5 +1,5 @@
 <template>
-  <div class="column" :style="$route.path !== '/lease_previous' ? 'min-height: 100vh' : null">
+  <div class="column" style="min-height: 100vh">
     <!-- Header -->
     <header>
       <!-- Top -->
