@@ -12,6 +12,7 @@ import MyObjectsBooking from '../pages/MyObjectsBooking.vue'
 import MyObjectsFinance from '../pages/MyObjectsFinance.vue'
 import ObjectConstructor from "../pages/ObjectConstructor.vue";
 import ObjectConstructorPrevious from "../pages/ObjectConstructorPrevious.vue";
+import ObjectConstructorFinal from "@/pages/ObjectConstructorFinal.vue";
 
 export default [
     /* Страницы доступны всем пользователям */
@@ -83,6 +84,13 @@ export default [
     {
         path: '/object_constructor',
         component: ObjectConstructor,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: '/object_constructor_final',
+        component: ObjectConstructorFinal,
         meta: {
             requiresAuth: true
         }
