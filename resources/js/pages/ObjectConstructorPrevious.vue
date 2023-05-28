@@ -21,14 +21,14 @@
         <q-img src="/assets/images/Point.svg" class="q-mr-md" style="width: 16px" no-spinner/>
         Установите цену
       </div>
-      <q-btn to="/lease_object" class="q-mt-lg" color="primary" label="Начать" style="padding: 10px 32px" unelevated no-caps/>
+      <q-btn to="/object_constructor" class="q-mt-lg" color="primary" label="Начать" style="padding: 10px 32px" unelevated no-caps/>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "LeasePrevious",
+  name: "ObjectConstructorPrevious",
 }
 </script>
 

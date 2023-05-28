@@ -5,13 +5,13 @@ import AccountPayment from "../pages/AccountPayment.vue"
 import AccountNotification from "../pages/AccountNotification.vue"
 import PageNotFound from "../pages/PageNotFound.vue";
 import LeaseHistory from "../pages/LeaseHistory.vue";
-import LeaseObject from "../pages/LeaseObject.vue";
 import Helps from "../pages/Helps.vue";
 import FavoriteObjects from "../pages/FavoriteObjects.vue";
 import MyObjects from "../pages/MyObjects.vue";
 import MyObjectsBooking from '../pages/MyObjectsBooking.vue'
 import MyObjectsFinance from '../pages/MyObjectsFinance.vue'
-import LeasePrevious from "@/pages/LeasePrevious.vue";
+import ObjectConstructor from "../pages/ObjectConstructor.vue";
+import ObjectConstructorPrevious from "../pages/ObjectConstructorPrevious.vue";
 
 export default [
     /* Страницы доступны всем пользователям */
@@ -74,15 +74,15 @@ export default [
         }
     },
     {
-        path: '/lease_previous',
-        component: LeasePrevious,
+        path: '/object_constructor_previout',
+        component: ObjectConstructorPrevious,
         meta: {
             requiresAuth: false
         }
     },
     {
-        path: '/lease_object',
-        component: LeaseObject,
+        path: '/object_constructor',
+        component: ObjectConstructor,
         meta: {
             requiresAuth: true
         }

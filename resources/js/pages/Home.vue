@@ -48,7 +48,7 @@ export default {
       allin_category: {
         id: null,
         name: "Все",
-        logo_url: "/assets/images/allin_category.svg",
+        logo_url: "/assets/images/category_icons/allin_category.svg",
       },
       selected_category: null,
 

@@ -4,7 +4,7 @@
   <!-- Навигация между шагами -->
   <div class="row q-mt-lg justify-center">
     <div class="navigator flex items-center">
-      <q-btn @click="step === 1 ? $router.push('/lease_previous') : $refs.stepper.previous()" flat text-color="primary" label="Назад" outline no-caps style="padding: 10px 18px; background-color: #EBEFFF"
+      <q-btn @click="step === 1 ? $router.push('/object_constructor_previout') : $refs.stepper.previous()" flat text-color="primary" label="Назад" outline no-caps style="padding: 10px 18px; background-color: #EBEFFF"
              class="q-mb-lg" icon="arrow_back"/>
       <div class="flex q-mx-lg">
         <q-stepper v-model="step" ref="stepper" color="primary" flat alternative-labels>
@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import Step1 from "@/components/LeaseObject/Step1.vue";
-import Step2 from "@/components/LeaseObject/Step2.vue";
-import Step3 from "@/components/LeaseObject/Step3.vue";
+import Step1 from "@/components/ObjectConstructor/Step1.vue";
+import Step2 from "@/components/ObjectConstructor/Step2.vue";
+import Step3 from "@/components/ObjectConstructor/Step3.vue";
 
 export default {
-  name: "LeaseObject",
+  name: "ObjectConstructor",
   components: {Step1, Step2, Step3},
   data() {
     return {
