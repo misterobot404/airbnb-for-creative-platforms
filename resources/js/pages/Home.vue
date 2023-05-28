@@ -37,7 +37,7 @@
 import {YandexMap, YandexMarker} from 'vue-yandex-maps'
 import {useObjectsStore} from "@/stores/objects";
 import {mapState} from "pinia";
-import allinCategory from "../assets/images/allin_category.svg"
+import allinCategory from "@/assets/images/allin_category.svg"
 
 export default {
   name: "Home",

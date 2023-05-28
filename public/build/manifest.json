@@ -55,7 +55,7 @@
     "src": "resources/js/assets/images/solar_ruble-broken.svg"
   },
   "resources/js/main.css": {
-    "file": "assets/main-e4a226d0.css",
+    "file": "assets/main-76b9f28d.css",
     "src": "resources/js/main.css"
   },
   "resources/js/main.js": {
@@ -75,9 +75,9 @@
       "assets/Inter-VariableFont_slnt_wght-4a772478.ttf"
     ],
     "css": [
-      "assets/main-e4a226d0.css"
+      "assets/main-76b9f28d.css"
     ],
-    "file": "assets/main-34d816be.js",
+    "file": "assets/main-4f923154.js",
     "imports": [
       "_vendor-a7bfdf8a.js"
     ],
