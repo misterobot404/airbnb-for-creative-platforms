@@ -1,5 +1,5 @@
 <template>
-  <div class="column" style="min-height: 100vh">
+  <div class="column" :style="$route.path !== '/lease_previous' ? 'min-height: 100vh' : null">
     <!-- Header -->
     <header>
       <!-- Top -->
@@ -7,7 +7,7 @@
         <!-- Logo -->
         <div>
           <router-link to="/">
-            <img src="@/assets/images/logo-header.svg" style="height: 40px">
+            <q-img src="/assets/images/logo-header.svg" height="42px" width="114px" fit="fill" no-spinner/>
           </router-link>
         </div>
         <!-- Search -->

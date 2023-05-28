@@ -32,7 +32,7 @@
             </div>
             <div class="col-lg-4 col-md-12 col-xs-12 q-mt-md flex column">
                 <div class="info-card">
-                    <img src="../assets/images/Mail-amico-1.svg" />
+                    <q-img src="/assets/images/Mail-amico-1.svg" no-spinner/>
                     <span class="text-m-b text-01">Подключайте уведомления и будьте в курсе</span>
                     <span class="text-s text-01">Включив уведомления вы будете моментально получать оповещения о новых
                         бронированиях, акциях

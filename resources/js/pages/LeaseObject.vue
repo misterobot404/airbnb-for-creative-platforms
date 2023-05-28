@@ -54,19 +54,19 @@ export default {
   display: none !important;
 }
 
->>> .on-left {
+:deep(.on-left) {
   margin-right: 6px;
 }
 
->>> .on-right {
+:deep(.on-right) {
   margin-left: 6px;
 }
 
->>> .q-stepper__title {
+:deep(.q-stepper__title) {
   width: 115px;
 }
 
->>> .q-stepper__dot {
+:deep(.q-stepper__dot) {
   font-size: 16px;
   width: 34px;
   min-width: 34px;
@@ -80,12 +80,8 @@ export default {
   padding: 4px 36px;
 }
 
->>> .q-stepper__tab:nth-child(2), >>> .q-stepper__tab:nth-child(3) {
+:deep(.q-stepper__tab:nth-child(2)), :deep(.q-stepper__tab:nth-child(3)) {
   display: none;
 }
-
-/*>>> .q-stepper__tab {
-  display: none;
-}*/
 </style>
 

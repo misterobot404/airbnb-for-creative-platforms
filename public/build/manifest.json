@@ -1,85 +1,25 @@
 {
-  "_vendor-a7bfdf8a.js": {
-    "file": "assets/vendor-a7bfdf8a.js"
+  "_vendor-6a8c5703.js": {
+    "file": "assets/vendor-6a8c5703.js"
   },
-  "resources/js/assets/fonts/Inter-VariableFont_slnt,wght.ttf": {
+  "public/assets/fonts/Inter-VariableFont_slnt,wght.ttf": {
     "file": "assets/Inter-VariableFont_slnt_wght-4a772478.ttf",
-    "src": "resources/js/assets/fonts/Inter-VariableFont_slnt,wght.ttf"
-  },
-  "resources/js/assets/images/E-Wallet-amico-1.svg": {
-    "file": "assets/E-Wallet-amico-1-bad499a0.svg",
-    "src": "resources/js/assets/images/E-Wallet-amico-1.svg"
-  },
-  "resources/js/assets/images/LeshaSVO.png": {
-    "file": "assets/LeshaSVO-0aa53c55.png",
-    "src": "resources/js/assets/images/LeshaSVO.png"
-  },
-  "resources/js/assets/images/Mail-amico-1.svg": {
-    "file": "assets/Mail-amico-1-7a9a1089.svg",
-    "src": "resources/js/assets/images/Mail-amico-1.svg"
-  },
-  "resources/js/assets/images/OTP-amico-1.svg": {
-    "file": "assets/OTP-amico-1-f2d66faf.svg",
-    "src": "resources/js/assets/images/OTP-amico-1.svg"
-  },
-  "resources/js/assets/images/Point.svg": {
-    "file": "assets/Point-eac2d1e9.svg",
-    "src": "resources/js/assets/images/Point.svg"
-  },
-  "resources/js/assets/images/allin_category.svg": {
-    "file": "assets/allin_category-d6f91203.svg",
-    "src": "resources/js/assets/images/allin_category.svg"
-  },
-  "resources/js/assets/images/analysis-amico-1.svg": {
-    "file": "assets/analysis-amico-1-3ac6e64e.svg",
-    "src": "resources/js/assets/images/analysis-amico-1.svg"
-  },
-  "resources/js/assets/images/logo-header.svg": {
-    "file": "assets/logo-header-00950b74.svg",
-    "src": "resources/js/assets/images/logo-header.svg"
-  },
-  "resources/js/assets/images/logos_mir.svg": {
-    "file": "assets/logos_mir-6eeaa499.svg",
-    "src": "resources/js/assets/images/logos_mir.svg"
-  },
-  "resources/js/assets/images/prev_ui_1.png": {
-    "file": "assets/prev_ui_1-0bda1fdc.png",
-    "src": "resources/js/assets/images/prev_ui_1.png"
-  },
-  "resources/js/assets/images/site-amico-1.svg": {
-    "file": "assets/site-amico-1-e372d105.svg",
-    "src": "resources/js/assets/images/site-amico-1.svg"
-  },
-  "resources/js/assets/images/solar_ruble-broken.svg": {
-    "file": "assets/solar_ruble-broken-bcc60a67.svg",
-    "src": "resources/js/assets/images/solar_ruble-broken.svg"
+    "src": "public/assets/fonts/Inter-VariableFont_slnt,wght.ttf"
   },
   "resources/js/main.css": {
-    "file": "assets/main-76b9f28d.css",
+    "file": "assets/main-a60e014b.css",
     "src": "resources/js/main.css"
   },
   "resources/js/main.js": {
     "assets": [
-      "assets/allin_category-d6f91203.svg",
-      "assets/LeshaSVO-0aa53c55.png",
-      "assets/site-amico-1-e372d105.svg",
-      "assets/analysis-amico-1-3ac6e64e.svg",
-      "assets/OTP-amico-1-f2d66faf.svg",
-      "assets/logos_mir-6eeaa499.svg",
-      "assets/solar_ruble-broken-bcc60a67.svg",
-      "assets/E-Wallet-amico-1-bad499a0.svg",
-      "assets/Mail-amico-1-7a9a1089.svg",
-      "assets/Point-eac2d1e9.svg",
-      "assets/prev_ui_1-0bda1fdc.png",
-      "assets/logo-header-00950b74.svg",
       "assets/Inter-VariableFont_slnt_wght-4a772478.ttf"
     ],
     "css": [
-      "assets/main-76b9f28d.css"
+      "assets/main-a60e014b.css"
     ],
-    "file": "assets/main-4f923154.js",
+    "file": "assets/main-de319ccb.js",
     "imports": [
-      "_vendor-a7bfdf8a.js"
+      "_vendor-6a8c5703.js"
     ],
     "isEntry": true,
     "src": "resources/js/main.js"

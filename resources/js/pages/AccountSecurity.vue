@@ -48,7 +48,7 @@
             </div>
             <div class="col-lg-4 col-md-12 col-xs-12 q-mt-md flex column">
                 <div class="info-card">
-                    <img src="../assets/images/OTP-amico-1.svg" />
+                    <q-img src="/assets/images/OTP-amico-1.svg" no-spinner/>
                     <span class="text-m-b text-01">Повысьте безопасность аккаунта</span>
                     <span class="text-s text-01">Безопасность нашего сообщества в приоритете. По этой причине мы проверяем
                         степень защиты всех аккаунтов.</span>
