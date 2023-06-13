@@ -7,12 +7,17 @@ import PageNotFound from "../pages/PageNotFound.vue";
 import LeaseHistory from "../pages/LeaseHistory.vue";
 import Helps from "../pages/Helps.vue";
 import FavoriteObjects from "../pages/FavoriteObjects.vue";
+import Object from "../pages/Object.vue";
 import MyObjects from "../pages/MyObjects.vue";
 import MyObjectsBooking from '../pages/MyObjectsBooking.vue'
 import MyObjectsFinance from '../pages/MyObjectsFinance.vue'
 import ObjectConstructor from "../pages/ObjectConstructor.vue";
 import ObjectConstructorPrevious from "../pages/ObjectConstructorPrevious.vue";
 import ObjectConstructorFinal from "@/pages/ObjectConstructorFinal.vue";
+import AdminPanel from "@/pages/AdminPanel.vue";
+import ObjectBooking from "@/pages/ObjectBooking.vue";
+import ObjectBookingSuccess from "@/pages/ObjectBookingSuccess.vue";
+import ObjectEditor from "@/pages/ObjectEditor.vue";
 
 export default [
     /* Страницы доступны всем пользователям */
@@ -27,6 +32,13 @@ export default [
     {
         path: '/help',
         component: Helps,
+        meta: {
+            requiresAuth: false
+        }
+    },
+    {
+        path: '/objects/:id',
+        component: Object,
         meta: {
             requiresAuth: false
         }
@@ -89,8 +101,29 @@ export default [
         }
     },
     {
+        path: '/objects/:id/edit',
+        component: ObjectEditor,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
         path: '/object_constructor_final',
         component: ObjectConstructorFinal,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: '/objects/:id/lease',
+        component: ObjectBooking,
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: '/objects/lease_is_done',
+        component: ObjectBookingSuccess,
         meta: {
             requiresAuth: true
         }
@@ -123,5 +156,13 @@ export default [
             requiresAuth: true
         }
     },
-
+    /* Страница доступны только администратору */
+    {
+        path: '/admin_panel',
+        component: AdminPanel,
+        meta: {
+            requiresAuth: true,
+            requiresAdmin: true
+        }
+    },
 ]

@@ -12,14 +12,9 @@ import {useUserStore} from "./stores/user";
 export default {
   name: "App",
   components: {Layout},
-  methods: {
-    initApp() {
-
-    }
-  },
   beforeMount() {
     if (useUserStore().token) {
-      axios.defaults.headers.common['Authorization'] = 'Bearer ' + this.token;
+      axios.defaults.headers.common['Authorization'] = 'Bearer ' + useUserStore().token;
     }
   }
 }

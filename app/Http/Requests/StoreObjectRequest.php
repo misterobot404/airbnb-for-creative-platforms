@@ -23,21 +23,22 @@ class StoreObjectRequest extends FormRequest
     {
         return [
             'category_id' => 'required | integer',
-            'owner_user_id' => 'required | integer',
+            'owner_user_id' => '',
             'title' => 'required | string',
             'description' => 'required | string',
-            'rating' => 'required | numeric',
+            'rating' => '',
             'coordinates' => '',
             'address' => 'required | string',
-            'address_comment' => 'sometimes | string',
+            'address_comment' => '',
             'inventory' => '',
             'benefits' => '',
             'hour_price' => 'required | numeric',
-            'minimal_autodeal_rating' => 'sometimes | numeric',
+            'minimal_autodeal_rating' => '',
             'schedule' => '',
-            'show_price_for_authorised_only' => 'sometimes | boolean',
+            'show_price_for_authorised_only' => '',
             'gallery' => '',
             'moderated' => 'sometimes | boolean',
+            'panorama' => '',
         ];
     }
 }

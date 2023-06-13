@@ -14,10 +14,11 @@ router.beforeEach(async (to, from, next) => {
     // Если пытаемся перейти на защищенную страницу
     if (to.meta.requiresAuth && !user_store.token) {
         user_store.show_signin_dialog = true;
+
         Notify.create({
             icon: "info",
             message: "Для продолжения необходимо авторизоваться"
-        });
+        })
 
         if (from.meta.requiresAuth === false) {
             next(false);
@@ -25,6 +26,10 @@ router.beforeEach(async (to, from, next) => {
         else {
             next("/");
         }
+    }
+    else if (to.meta.requiresAdmin && !user_store.user.is_admin) {
+        Notify.create({icon: "info", message: "Ошибка доступа к защищенному ресурсу"});
+        next("/");
     }
     // Все проверки пройдены, страницу можно открыть
     else {

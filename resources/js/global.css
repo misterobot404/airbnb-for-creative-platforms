@@ -32,8 +32,8 @@
 }
 
 .page-default-width {
-    max-width: 1180px;
-    width: 1180px;
+    max-width: 1190px;
+    width: 1190px;
 }
 
 /*Основной цвет и заголовки*/
@@ -217,6 +217,10 @@ base-04 {
     background: #D8DDF2;
 }
 
+.text-true-red {
+    color: #E74362;
+}
+
 /*Фон акцентных значков или кнопок*/
 .accent {
     background: #E74362;
@@ -235,7 +239,7 @@ base-04 {
 .text-xl-b {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 19px;
     line-height: 28px;
 }
@@ -251,7 +255,7 @@ base-04 {
 .text-l-b {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 17px;
     line-height: 28px;
 }
@@ -267,7 +271,7 @@ base-04 {
 .text-m-b {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     line-height: 24px;
 }
@@ -336,6 +340,10 @@ p::selection {
     border-radius: 8px;
 }
 
+.input-lg-hint {
+    padding-bottom: 30px;
+}
+
 /*
 ** ИЗМЕНЕНИЕ БАЗОВЫХ КЛАССОВ
 */
@@ -343,6 +351,10 @@ p::selection {
 body,
 html {
     color: #333;
+}
+
+td {
+    white-space: normal !important;
 }
 
 :root {

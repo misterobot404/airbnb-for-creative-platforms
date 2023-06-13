@@ -27,8 +27,8 @@ class StoreDealRequest extends FormRequest
             'object_id' => 'required | integer',
             'hour_price' => 'required | numeric',
             'total_price' => 'required | numeric',
-            'starts_from' => 'required | datetime',
-            'ends_on' => 'required | datetime',
+            'starts_from' => 'required',
+            'ends_on' => 'required',
             'confirmed' => 'sometimes | boolean',
         ];
     }

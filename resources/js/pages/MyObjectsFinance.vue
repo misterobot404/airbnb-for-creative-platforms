@@ -1,13 +1,13 @@
 <template>
-    <ObjectContainer>
+    <MyObjectsContainer>
         <div>
             <h1>Финансы</h1>
         </div>
-    </ObjectContainer>
+    </MyObjectsContainer>
 </template>
 
 <script>
-import ObjectContainer from '../components/ObjectContainer.vue';
+import MyObjectsContainer from '../components/MyObjectsContainer.vue';
 
 export default {
     data() {
@@ -16,7 +16,7 @@ export default {
         }
     },
     name: "MyObjects",
-    components: { ObjectContainer }
+    components: { MyObjectsContainer }
 }
 </script>
 

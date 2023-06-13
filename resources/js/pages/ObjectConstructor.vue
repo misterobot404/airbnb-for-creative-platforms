@@ -14,21 +14,23 @@
             <q-step :name="2"/>
             <q-step :name="3"/>
             <q-step :name="4" title="Местоположение" icon="place" :done="step > 4"/>
-            <q-step :name="5" title="Цена" :icon="step > 4 && step < 8 ? 'edit' : 'money'" :color="step > 4 && step < 8 ? 'primary' : null" :done="step > 7"/>
+            <q-step :name="5" title="Цена" :icon="step > 4 && step < 9 ? 'edit' : 'money'" :color="step > 4 && step < 9 ? 'primary' : null" :done="step > 8"/>
             <q-step :name="6"/>
             <q-step :name="7"/>
-            <q-step :name="8" title="Публикация" :icon="step > 7 && step < 10 ? 'edit' : 'assignment'" :color="step > 7 && step < 10 ? 'primary' : null"/>
-            <q-step :name="9"/>
+            <q-step :name="8"/>
+            <q-step :name="9" title="Публикация" :icon="step > 8 && step < 11 ? 'edit' : 'present_to_all'" :color="step > 8 && step < 11 ? 'primary' : null"/>
           </q-stepper>
         </div>
-        <q-btn @click="step !== 9 ? $refs.stepper.next() : $router.push('/object_constructor_final')" color="primary" style="padding: 10px 18px" no-caps unelevated
-               :label="step === 4 ? 'Готово' : 'Далее'" class="q-mb-lg" icon-right="arrow_forward"/>
+        <q-btn @click="step !== 9 ? $refs.stepper.next() : createObject()" color="primary" style="padding: 10px 18px" no-caps unelevated
+               :label="step === 9 ? 'Готово' : 'Далее'" class="q-mb-lg" icon-right="arrow_forward"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import {useObjectsStore} from "@/stores/objects";
+
 import Step1 from "@/components/ObjectConstructor/Step1.vue";
 import Step2 from "@/components/ObjectConstructor/Step2.vue";
 import Step3 from "@/components/ObjectConstructor/Step3.vue";
@@ -70,6 +72,16 @@ export default {
           return 'Step9';
       }
     }
+  },
+  methods: {
+    createObject() {
+      useObjectsStore().createObject()
+          .then(() => this.$router.push('/object_constructor_final'))
+          .catch(() => this.$q.notify({type: 'negative', message: 'Ошибка создания площадки, проверьте правильность заполнения данных'}))
+    }
+  },
+  beforeMount() {
+    useObjectsStore().new_object = useObjectsStore().getNewObject();
   }
 }
 </script>
@@ -110,7 +122,7 @@ export default {
 :deep(.q-stepper__tab:nth-child(3)),
 :deep(.q-stepper__tab:nth-child(6)),
 :deep(.q-stepper__tab:nth-child(7)),
-:deep(.q-stepper__tab:nth-child(9)) {
+:deep(.q-stepper__tab:nth-child(8)) {
   display: none;
 }
 </style>

@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Place;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\File;
 
 class AuthController extends Controller
 {
@@ -16,7 +18,7 @@ class AuthController extends Controller
         $validator = Validator::make(request()->all(), [
             'name' => 'required',
             'email' => 'required|unique:users|email',
-            'password' => 'required|min:6'
+            'password' => 'required|min:5'
         ]);
 
         if ($validator->fails()) {
@@ -32,9 +34,17 @@ class AuthController extends Controller
         }
 
         $user = User::create([
+            'surname' => request('surname'),
             'name' => request('name'),
+            'patronymic' => request('patronymic'),
+            'birthday' => request('birthday'),
+            'phonenumber' => request('phonenumber'),
             'email' => request('email'),
-            'password' => bcrypt(request('password'))
+            'is_entity' => request('is_entity'),
+            'organization_name' => request('organization_name'),
+            'organization_inn' => request('organization_inn'),
+            'employer_position' => request('employer_position'),
+            'password' => bcrypt(request('password')),
         ]);
 
         if (!$user) {
@@ -63,6 +73,10 @@ class AuthController extends Controller
                     "password" => "Wrong email or password"
                 ]
             ], 403);
+        }
+
+        if (!$user->access) {
+            return response()->json([], 451);
         }
 
         // Внутренний API запрос для получения токенов
@@ -123,5 +137,29 @@ class AuthController extends Controller
         $accessToken->revoke();
 
         return response()->json([], 201);
+    }
+
+    public function index() {
+        return User::all();
+    }
+
+    public function updateAvatar($user_id) {
+        $user = User::where('id', $user_id)->first();
+
+        if ($user->avatar_url !== '/storage/avatars/default.png' && File::exists(public_path($user->avatar_url))) {
+            File::delete(public_path($user->avatar_url));
+        }
+        $user->avatar_url = '/storage/' . request()->file('avatar')->store('avatars', 'public');
+        $user->save();
+
+        return response()->json(['success' => true, 'avatar_url' => $user->avatar_url], 200);
+    }
+
+    public function updateAccess($user_id, $access) {
+        $user = User::where('id', $user_id)->first();
+        $user->access = $access;
+        $user->save();
+
+        return response()->json(['success' => true, 'avatar_url' => $user->avatar_url], 200);
     }
 }

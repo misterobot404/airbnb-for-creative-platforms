@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Api\DealsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,8 @@ Route::get('/categories', [Controller::class, 'categories'])->name('categories')
 Route::get('/deals', [Controller::class, 'deals'])->name('deals');
 Route::get('/reviews', [Controller::class, 'reviews'])->name('reviews');
 Route::get('/messages', [Controller::class, 'messages'])->name('messages');
+
+Route::get('/deals/{id}/contract', [DealsController::class, 'contract']);
 
 Route::get('/{any?}', function () {
     return view('index');

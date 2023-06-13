@@ -39,9 +39,12 @@
                     </q-item>
                   </template>
                   <!--  Ссылки на страницы -->
-                  <q-item v-for="link in user_panel_links" :to="link.to" clickable>
-                    <q-item-section class="text-size-sm" v-text="link.title"/>
-                  </q-item>
+                  <template v-for="link in user_panel_links" >
+                    <q-item :to="link.to" clickable>
+                      <q-item-section class="text-size-sm" v-text="link.title"/>
+                    </q-item>
+                    <q-separator v-if="link.separator"/>
+                  </template>
                   <!-- Выход из аккаунта -->
                   <q-item clickable @click="logout()">
                     <q-item-section class="text-size-sm">Выйти</q-item-section>
@@ -88,19 +91,21 @@ export default {
       user_panel_links: [
         {
           title: "Аккаунт",
-          to: "/account"
+          to: "/account",
+          separator: true
         },
         {
           title: "История аренды",
           to: "/lease_history"
         },
         {
-          title: "Мои объекты",
-          to: "/my_objects"
-        },
-        {
           title: "Избранное",
           to: "/favorite_objects"
+        },
+        {
+          title: "Мои площадки",
+          to: "/my_objects",
+          separator: true
         },
         {
           title: "Помощь",

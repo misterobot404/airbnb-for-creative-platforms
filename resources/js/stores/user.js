@@ -11,12 +11,8 @@ export const useUserStore = defineStore('user', {
         }
     },
     actions: {
-        signup(name, email, password) {
-            return axios.post('/api/register', {
-                name: name,
-                email: email,
-                password: password
-            })
+        signup(payload) {
+            return axios.post('/api/register', payload)
         },
         signin(email, password) {
             return axios.post('/api/login', {email: email, password: password})

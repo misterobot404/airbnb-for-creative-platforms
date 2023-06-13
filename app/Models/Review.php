@@ -20,12 +20,7 @@ class Review extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'object_id',
-        'rating',
-        'text',
-        'moderated',
-    ];
+    protected $guarded = ['id'];
 
     public function object() : BelongsTo {
         return $this->belongsTo(Place::class, 'object_id');

@@ -2,7 +2,7 @@
   <!-- Название площадки -->
   <div class="q-pt-lg">
     <h1 class="text-01">Придумайте название вашей площадке</h1>
-    <q-input outlined label="Название площадки" />
+    <q-input outlined label="Название площадки" v-model="new_object.title"/>
     <div>
       <h5 class="text-01 q-mb-lg">Рекомендация от CreativeHub</h5>
       <div class="text-m flex items-center no-wrap">
@@ -22,9 +22,13 @@
 </template>
 
 <script>
+import {useObjectsStore} from "@/stores/objects";
+
 export default {
   data() {
-    return {}
+    return {
+      new_object: useObjectsStore().new_object
+    }
   },
 }
 </script>
